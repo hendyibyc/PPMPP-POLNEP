@@ -51,11 +51,32 @@
     <li><a href="#">Berita</a></li>
 </ul>
 
-<input type="text" placeholder="Cari">
+<button class="search-btn">
+    <i class="bi bi-search"></i>
+</button>
+
+<button class="menu-toggle">
+    <i class="bi bi-list"></i>
+    </button>
+
 </div>
 </nav>
+<div class="search-modal" id="searchModal">
+    <div class="search-content">
+        <div class="search-header">
+            <i class="bi bi-search"></i>
+            <input type="text" id="searchInput" placeholder="Cari berita, layanan, atau halaman...">
+            <button class="close-btn">
+                <i class="bi bi-x-lg"></i>
+            </button>
+        </div>
+        <div class="search-body">
+            Ketik kata kunci untuk mulai mencari.
+        </div>
+    </div>
+</div>
 
-
+<div class="overlay"></div>
     <!--Hero-->
 <section class="hero" style="background-image: url('{{ asset('Gedung.jpeg') }}');">
 
@@ -87,12 +108,26 @@
             <div class="footer-social">
                 <h3>Media Sosial</h3>
                 <div class="social-icons">
-                    <a href="#"><i class="bi bi-youtube"></i></a>
-                    <a href="#"><i class="bi bi-instagram"></i></a>
-                    <a href="#"><i class="bi bi-twitter-x"></i></a>
-                    <a href="#"><i class="bi bi-telegram"></i></a>
-                    <a href="#"><i class="bi bi-facebook"></i></a>
-                </div>
+    <a href="www.youtube.com/@mediapolnep" target="_blank">
+        <i class="bi bi-youtube"></i>
+    </a>
+
+    <a href="https://www.instagram.com/mediapolnep?igsh=MWJhcmdiZ2R3Mmljbg==" target="_blank">
+        <i class="bi bi-instagram"></i>
+    </a>
+
+    <a href="#" target="_blank">
+        <i class="bi bi-twitter-x"></i>
+    </a>
+
+    <a href="#" target="_blank">
+        <i class="bi bi-telegram"></i>
+    </a>
+
+    <a href="https://www.facebook.com/share/14oqJnVqhzD/" target="_blank">
+        <i class="bi bi-facebook"></i>
+    </a>
+</div>
             </div>
         </div>
 
