@@ -26,8 +26,8 @@ body {
 }
 
 .logo img {
-    width: 134px;
-    height: 101px;
+    width: 94px;
+    height: 70px;
 }
 
 .logo h1 {
@@ -146,6 +146,70 @@ body {
 .overlay.active{
     opacity:1;
     visibility:visible;
+}
+
+.user-dropdown {
+    position: relative;
+}
+
+.user-button {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.user-button .bi-person-circle {
+    font-size: 22px;
+}
+
+.user-button .bi-chevron-down {
+    font-size: 11px;
+}
+
+.user-dropdown-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+    min-width: 140px;
+    background: white;
+    border-radius: 8px;
+    padding: 6px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+}
+
+.user-dropdown-menu.active {
+    display: block;
+}
+
+.user-dropdown-menu form {
+    margin: 0;
+}
+
+.user-dropdown-menu button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border: none;
+    background: transparent;
+    padding: 9px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    text-align: left;
+}
+
+.user-dropdown-menu button:hover {
+    background: #f2f2f2;
 }
 
 .hero {

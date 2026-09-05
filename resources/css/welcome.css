@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #f5fafb;
+    color: #263942;
+}
+
+.welcome-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    width: 100%;
+    padding: 5px 70px;
+    background: #ffffff;
+    border-bottom: 1px solid #e3ecef;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.logo img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.logo h1 {
+    font-family: "Inclusive Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1;
+    color: #102a35;
+}
+
+.logo p {
+    max-width: 330px;
+    margin-top: 5px;
+    font-size: 9px;
+    line-height: 1.5;
+    color: #7b8b92;
+}
+
+.welcome-main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 60px 20px;
+}
+
+.welcome-content {
+    width: 100%;
+    max-width: 650px;
+    text-align: center;
+}
+
+.welcome-label {
+    display: inline-block;
+    padding: 7px 14px;
+    border-radius: 30px;
+    background: rgba(24, 199, 231, 0.1);
+    border: 1px solid rgba(24, 199, 231, 0.2);
+    color: #0fb2d0;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.3px;
+}
+
+.welcome-content h2 {
+    margin-top: 20px;
+    font-family: "Jost", sans-serif;
+    font-size: 43px;
+    line-height: 1.15;
+    color: #102a35;
+    font-weight: 700;
+}
+
+.welcome-content h2 span {
+    color: #18c7e7;
+}
+
+.welcome-description {
+    max-width: 500px;
+    margin: 15px auto 35px;
+    font-size: 13px;
+    line-height: 1.7;
+    color: #7b8b92;
+}
+
+.auth-table {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #e3ecef;
+    border-radius: 17px;
+    overflow: hidden;
+    box-shadow: 0 15px 45px rgba(16, 42, 53, 0.07);
+    text-align: left;
+}
+
+.auth-row {
+    min-height: 105px;
+    padding: 22px 25px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    text-decoration: none;
+    border-bottom: 1px solid #e3ecef;
+    transition: background 0.25s ease, padding 0.25s ease;
+}
+
+.auth-row:last-child {
+    border-bottom: none;
+}
+
+.auth-row:hover {
+    background: #f7fcfd;
+    padding-left: 30px;
+}
+
+.auth-icon {
+    width: 54px;
+    height: 54px;
+    flex-shrink: 0;
+    border-radius: 14px;
+    background: rgba(24, 199, 231, 0.11);
+    color: #0fb2d0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-icon svg {
+    width: 25px;
+    height: 25px;
+}
+
+.register-icon {
+    background: rgba(16, 42, 53, 0.07);
+    color: #102a35;
+}
+
+.auth-info {
+    flex: 1;
+}
+
+.auth-info h3 {
+    font-family: "Jost", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #102a35;
+}
+
+.auth-info p {
+    margin-top: 4px;
+    font-size: 11px;
+    color: #7b8b92;
+}
+
+.auth-arrow {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f2f7f8;
+    color: #0fb2d0;
+    font-size: 20px;
+    transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.auth-row:hover .auth-arrow {
+    background: #18c7e7;
+    color: #ffffff;
+    transform: translateX(4px);
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    font-size: 10px;
+    color: #9aa9ae;
+    border-top: 1px solid #e3ecef;
+    background: #ffffff;
+}
+
+@media (max-width: 600px) {
+    .header {
+        padding: 20px;
+    }
+
+    .logo img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo h1 {
+        font-size: 21px;
+    }
+
+    .logo p {
+        max-width: 240px;
+        font-size: 8px;
+    }
+
+    .welcome-main {
+        padding: 40px 18px;
+    }
+
+    .welcome-content h2 {
+        font-size: 32px;
+    }
+
+    .welcome-description {
+        font-size: 12px;
+        margin-bottom: 28px;
+    }
+
+    .auth-row {
+        min-height: 90px;
+        padding: 18px;
+    }
+
+    .auth-row:hover {
+        padding-left: 20px;
+    }
+
+    .auth-icon {
+        width: 45px;
+        height: 45px;
+        border-radius: 11px;
+    }
+
+    .auth-icon svg {
+        width: 21px;
+        height: 21px;
+    }
+
+    .auth-info h3 {
+        font-size: 16px;
+    }
+
+    .auth-info p {
+        font-size: 10px;
+    }
+
+    .auth-arrow {
+        width: 32px;
+        height: 32px;
+        font-size: 17px;
+    }
+}

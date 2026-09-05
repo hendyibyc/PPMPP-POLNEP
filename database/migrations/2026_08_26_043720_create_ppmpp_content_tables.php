@@ -40,38 +40,31 @@ return new class extends Migration
 
         Schema::create('pembelajaran', function (Blueprint $table) {
             $table->id();
-
             $table->foreignId('user_id')
                 ->constrained('users')
                 ->cascadeOnDelete();
-
             $table->string('judul');
             $table->text('deskripsi')->nullable();
             $table->string('file_url');
             $table->string('file_type')->nullable();
-
             $table->timestamps();
         });
 
         Schema::create('dokumen', function (Blueprint $table) {
             $table->id();
-
             $table->foreignId('user_id')
                 ->nullable()
                 ->constrained('users')
                 ->nullOnDelete();
-
             $table->string('judul');
             $table->string('gambar')->nullable();
             $table->string('file_url');
             $table->string('file_type')->nullable();
-
             $table->timestamps();
         });
 
         Schema::create('struktur_organisasi', function (Blueprint $table) {
             $table->id();
-
             $table->string('nama');
             $table->string('jabatan');
             $table->string('foto')->nullable();
@@ -81,7 +74,6 @@ return new class extends Migration
                 ->nullable()
                 ->constrained('struktur_organisasi')
                 ->nullOnDelete();
-
             $table->timestamps();
         });
 

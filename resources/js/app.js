@@ -40,3 +40,19 @@ if (overlay) {
         overlay.classList.remove("active");
     });
 }
+
+ const userButton = document.getElementById('userButton');
+    const userDropdownMenu = document.getElementById('userDropdownMenu');
+
+    userButton.addEventListener('click', function (event) {
+        event.stopPropagation();
+        userDropdownMenu.classList.toggle('active');
+    });
+
+    document.addEventListener('click', function (event) {
+        if (!userDropdownMenu.contains(event.target) &&
+            !userButton.contains(event.target)) {
+            userDropdownMenu.classList.remove('active');
+        }
+    });
+
