@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f5fafb;
+    color: #263942;
+    min-height: 100vh;
+}
+
+.delete-menu-page {
+    width: 100%;
+    min-height: 100vh;
+    padding: 45px 30px;
+}
+
+.delete-menu-container {
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+.delete-menu-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    margin-bottom: 30px;
+}
+
+.delete-menu-title {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.delete-menu-icon {
+    width: 58px;
+    height: 58px;
+    border-radius: 14px;
+    background: #fff0f0;
+    color: #dc3545;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    flex-shrink: 0;
+}
+
+.delete-menu-title h1 {
+    font-family: 'Jost', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    color: #102a35;
+    line-height: 1.2;
+    margin-bottom: 5px;
+}
+
+.delete-menu-title p {
+    font-size: 14px;
+    color: #7b8b92;
+    line-height: 1.5;
+}
+
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 17px;
+    border: 1px solid #d8e4e8;
+    border-radius: 9px;
+    background: #ffffff;
+    color: #52646c;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.2s ease;
+    white-space: nowrap;
+}
+
+.back-button:hover {
+    background: #f0f7f9;
+    border-color: #18c7e7;
+    color: #0fb2d0;
+}
+
+.delete-menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.delete-menu-item {
+    width: 100%;
+    min-height: 92px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 17px 20px;
+    background: #ffffff;
+    border: 1px solid #e1eaed;
+    border-radius: 13px;
+    text-decoration: none;
+    color: inherit;
+    transition: 0.2s ease;
+}
+
+.delete-menu-item:hover {
+    border-color: #18c7e7;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 18px rgba(20, 80, 95, 0.08);
+}
+
+.item-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    background: #eafaff;
+    color: #10b6d4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    flex-shrink: 0;
+}
+
+.item-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.item-content h2 {
+    font-family: 'Jost', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #102a35;
+    margin-bottom: 4px;
+    line-height: 1.3;
+}
+
+.item-content p {
+    font-size: 13px;
+    color: #7b8b92;
+    line-height: 1.5;
+}
+
+.item-arrow {
+    width: 38px;
+    height: 38px;
+    border-radius: 9px;
+    background: #f3f8fa;
+    color: #71838a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    flex-shrink: 0;
+    transition: 0.2s ease;
+}
+
+.delete-menu-item:hover .item-arrow {
+    background: #18c7e7;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+
+    .delete-menu-page {
+        padding: 25px 16px;
+    }
+
+    .delete-menu-header {
+        align-items: flex-start;
+        flex-direction: column;
+        margin-bottom: 22px;
+    }
+
+    .delete-menu-title {
+        width: 100%;
+        gap: 13px;
+    }
+
+    .delete-menu-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 21px;
+    }
+
+    .delete-menu-title h1 {
+        font-size: 25px;
+    }
+
+    .delete-menu-title p {
+        font-size: 12px;
+    }
+
+    .back-button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .delete-menu-item {
+        min-height: 82px;
+        padding: 14px;
+        gap: 12px;
+    }
+
+    .item-icon {
+        width: 44px;
+        height: 44px;
+        font-size: 19px;
+        border-radius: 10px;
+    }
+
+    .item-content h2 {
+        font-size: 16px;
+    }
+
+    .item-content p {
+        font-size: 11px;
+    }
+
+    .item-arrow {
+        width: 32px;
+        height: 32px;
+        font-size: 14px;
+    }
+}
+

@@ -23,7 +23,7 @@ class PpmppSeeder extends Seeder
             [
                 'id' => 2,
                 'name' => 'Penulis',
-                'email' => 'writer04@gmail.com',
+                'email' => 'penulis04@gmail.com',
                 'password' => Hash::make('password'),
                 'role' => 'penulis',
                 'created_at' => now(),

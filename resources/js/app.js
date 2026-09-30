@@ -1,28 +1,25 @@
+// Search modal toggle
 const modal = document.getElementById("searchModal");
 const openBtn = document.querySelector(".search-btn");
 const closeBtn = document.querySelector(".close-btn");
 const input = document.getElementById("searchInput");
+
 openBtn.onclick = () => {
     modal.classList.add("active");
     input.focus();
-}
+};
+
 closeBtn.onclick = () => {
     modal.classList.remove("active");
-}
+};
 
-modal.addEventListener("click", function(e){
-
-    if(e.target === modal){
-
+modal.addEventListener("click", function (e) {
+    if (e.target === modal) {
         modal.classList.remove("active");
-
     }
-
 });
 
-
-// max 768
-
+// Mobile menu toggle
 const menuToggle = document.querySelector(".menu-toggle");
 const menu = document.querySelector(".menu");
 const overlay = document.querySelector(".overlay");
@@ -41,18 +38,42 @@ if (overlay) {
     });
 }
 
- const userButton = document.getElementById('userButton');
-    const userDropdownMenu = document.getElementById('userDropdownMenu');
+// User dropdown toggle
+const userButton = document.getElementById("userButton");
+const userDropdownMenu = document.getElementById("userDropdownMenu");
 
-    userButton.addEventListener('click', function (event) {
+userButton.addEventListener("click", function (event) {
+    event.stopPropagation();
+    userDropdownMenu.classList.toggle("active");
+});
+
+document.addEventListener("click", function (event) {
+    if (
+        !userDropdownMenu.contains(event.target) &&
+        !userButton.contains(event.target)
+    ) {
+        userDropdownMenu.classList.remove("active");
+    }
+});
+
+// Profile dropdown toggle
+const profileButton = document.getElementById("profileButton");
+const profileDropdown = document.getElementById("profileDropdown");
+
+if (profileButton && profileDropdown) {
+    profileButton.addEventListener("click", function (event) {
         event.stopPropagation();
-        userDropdownMenu.classList.toggle('active');
+        profileButton.classList.toggle("active");
+        profileDropdown.classList.toggle("active");
     });
 
-    document.addEventListener('click', function (event) {
-        if (!userDropdownMenu.contains(event.target) &&
-            !userButton.contains(event.target)) {
-            userDropdownMenu.classList.remove('active');
+    document.addEventListener("click", function (event) {
+        if (
+            !profileButton.contains(event.target) &&
+            !profileDropdown.contains(event.target)
+        ) {
+            profileButton.classList.remove("active");
+            profileDropdown.classList.remove("active");
         }
     });
-
+}

@@ -189,28 +189,23 @@ body {
     cursor: pointer;
 }
 
-.back-button {
-    border: 2px solid #18C7E7;
-    background: white;
-    color: #18C7E7;
-}
+@media (max-width: 768px) {
 
-.back-button:hover {
-    background: #18C7E7;
-    color: white;
-}
-
-@media (max-width: 600px) {
     .register-container {
         padding: 20px;
     }
 
-    .register-header {
-        padding: 20px;
+    .register-card {
+        width: 100%;
+        max-width: 450px;
     }
 
-    .register-content {
-        padding: 30px 25px;
+    .register-header {
+        padding: 25px 20px;
+    }
+
+    .logo {
+        gap: 8px;
     }
 
     .logo img {
@@ -223,10 +218,35 @@ body {
     }
 
     .logo p {
+        max-width: 240px;
         font-size: 8px;
     }
 
+    .register-content {
+        padding: 30px 20px;
+    }
+
     .register-content h2 {
-        font-size: 25px;
+        font-size: 28px;
+    }
+
+    .form-group label {
+        font-size: 14px;
+    }
+
+    .form-group input {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .register-bottom {
+        gap: 12px;
+    }
+
+    .register-bottom button,
+    .register-bottom a {
+        min-height: 45px;
+        padding: 10px 20px;
+        font-size: 14px;
     }
 }

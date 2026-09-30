@@ -1,0 +1,153 @@
+.visimisi-page {
+    width: 100%;
+    min-height: 550px;
+    background: #f5f7fa;
+    padding: 25px 40px 55px;
+}
+
+.visimisi-heading {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.visimisi-heading h1 {
+    margin: 0 0 8px;
+    color: #3d9eea;
+    font-family: "Jost", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.visimisi-heading h2 {
+    width: 800px;
+    margin: 0 auto;
+    color: #59717d;
+    font-family: "Jost", sans-serif;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.visimisi-content {
+    width: 100%;
+    max-width: 945px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    column-gap: 45px;
+}
+
+.visimisi-text {
+    padding-top: 0;
+}
+
+.visi-section {
+    margin-bottom: 17px;
+}
+
+.misi-section {
+    margin-bottom: 0;
+}
+
+.visi-section h3,
+.misi-section h3 {
+    margin: 0;
+    color: #111111;
+    font-family: "Jost", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.section-line {
+    width: 59px;
+    height: 5px;
+    margin: 9px 0 16px;
+    background: #18c7e7;
+}
+
+.visi-section p {
+    max-width: 440px;
+    margin: 0;
+    color: #222222;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 19px;
+    line-height: 1.02;
+}
+
+.misi-section ol {
+    margin: 0;
+    padding-left: 27px;
+    color: #222222;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 1.08;
+}
+
+.misi-section li {
+    padding-left: 2px;
+    margin-bottom: 2px;
+}
+
+.visimisi-image {
+    width: 450px;
+    max-width: 100%;
+}
+
+.visimisi-image img {
+    display: block;
+    width: 450px;
+    max-width: 100%;
+    height: 273px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+
+    .visimisi-page {
+        padding: 28px 20px 45px;
+    }
+
+    .visimisi-heading {
+        margin-bottom: 28px;
+    }
+
+    .visimisi-heading h1 {
+        font-size: 32px;
+    }
+
+    .visimisi-heading h2 {
+        font-size: 14px;
+        line-height: 1.2;
+    }
+
+    .visimisi-content {
+        grid-template-columns: 1fr;
+        row-gap: 30px;
+    }
+
+    .visi-section {
+        margin-bottom: 28px;
+    }
+
+    .visi-section h3,
+    .misi-section h3 {
+        font-size: 22px;
+    }
+
+    .visi-section p {
+        font-size: 17px;
+        line-height: 1.2;
+    }
+
+    .misi-section ol {
+        font-size: 16px;
+        line-height: 1.3;
+    }
+
+    .visimisi-image img {
+        height: 230px;
+    }
+}

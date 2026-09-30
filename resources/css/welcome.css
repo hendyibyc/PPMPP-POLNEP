@@ -195,7 +195,8 @@ body {
     background: #ffffff;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
+
     .header {
         padding: 20px;
     }

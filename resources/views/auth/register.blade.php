@@ -103,7 +103,6 @@
                     <div class="register-bottom">
                         <div class="register-actions">
                             <button type="submit">Register</button>
-                                <a href="{{ url('/') }}" class="back-button">Kembali</a>
                         </div>
                                 <a href="{{ route('login') }}">Login</a>
                         </div>

@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Beranda PPMPP</title>
     <!-- Fonts inclusive sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,11 +42,22 @@
 
         <div class="nav-menu">
             <ul class="menu">
-                <li><a href="#">Beranda</a></li>
-                <li><a href="#">Profil</a></li>
-                <li><a href="#">Pembelajaran</a></li>
-                <li><a href="#">Layanan</a></li>
-                <li><a href="#">Berita</a></li>
+                <li><a href="{{ route('home') }}">Beranda</a></li>
+
+                <li class="profile-menu">
+                    <button type="button" class="profile-button" id="profileButton"><span>Profil</span><span
+                            id="profileArrow">›</span></button>
+
+                    <div class="profile-dropdown" id="profileDropdown">
+                        <a href="{{ route('profil') }}">Profil</a>
+                        <a href="{{ route('visimisi') }}">Visi & Misi</a>
+                        <a href="{{ route('strukturorganisasi') }}">Struktur Organisasi</a>
+                    </div>
+                </li>
+
+                <li><a href="{{ ('berita') }}">Berita</a></li>
+                <li><a href="{{ ('faq') }}">FAQ</a></li>
+                <li><a href="{{ ('layanan') }}">Document</a></li>
             </ul>
 
             <button class="search-btn">
@@ -79,6 +89,7 @@
             </button>
         </div>
     </nav>
+
     <div class="search-modal" id="searchModal">
         <div class="search-content">
             <div class="search-header">
@@ -100,8 +111,7 @@
         <div class="hero-content">
             <h1>UNIT PPMPP</h1>
             <h2>Pusat Penjaminan Mutu dan Pengembangan Pembelajaran</h2>
-            <p>Unit kami mengawasi dan memastikan semua jurusan dan kelas Polnep memiliki kualitas yang sangat baik dan
-                sesuai dengan peraturan pemerintah.</p>
+            <p>Unit kami mengawasi dan memastikan semua jurusan dan kelas Polnep memiliki kualitas yang sangat baik dan sesuai dengan peraturan pemerintah.</p>
             <div class="button-group">
                 <button>Lihat Layanan <span>›</span></button>
                 <button>Tentang Kami <span>›</span></button>
@@ -151,8 +161,7 @@
                 <h3>Informasi Kami</h3>
                 <div class="info-item">
                     <i class="bi bi-geo-alt"></i>
-                    <span>Jl. Ahmad Yani, Bansir Darat,
-                        Pontianak Tenggara, Kalimantan Barat 78124</span>
+                    <span>Jl. Ahmad Yani, Bansir Darat, Pontianak Tenggara, Kalimantan Barat 78124</span>
                 </div>
 
                 <div class="info-item">

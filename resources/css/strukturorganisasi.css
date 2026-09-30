@@ -1,0 +1,40 @@
+.struktur-heading {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.struktur-heading h1 {
+    margin: 0 0 8px;
+    color: #3d9eea;
+    font-family: "Jost", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.struktur-heading h2 {
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+    color: #59717d;
+    font-family: "Jost", sans-serif;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 1.15;
+    text-align: center;
+}
+
+.struktur-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.struktur-image img {
+    display: block;
+    width: 100%;
+    max-width: 1100px;
+    height: auto;
+    object-fit: contain;
+}

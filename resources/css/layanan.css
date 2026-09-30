@@ -1,0 +1,174 @@
+.layanan-page {
+    width: 100%;
+    min-height: 650px;
+    padding: 55px 60px 70px;
+    background: #f7f9fc;
+}
+
+.layanan-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.layanan-heading h1 {
+    margin: 0 0 12px;
+    font-family: 'Jost', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    color: #3fa1ed;
+}
+
+.layanan-heading h2 {
+    max-width: 900px;
+    margin: 0 auto;
+    font-family: 'Jost', sans-serif;
+    font-size: 25px;
+    line-height: 1.15;
+    font-weight: 700;
+    color: #526d78;
+}
+
+.layanan-search {
+    width: 290px;
+    margin: 35px auto 45px;
+    position: relative;
+}
+
+.layanan-search i {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #111111;
+}
+
+.layanan-search input {
+    width: 100%;
+    height: 52px;
+    padding: 0 18px 0 48px;
+    border: 1px solid #d5d5d5;
+    border-radius: 12px;
+    background: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.layanan-search input:focus {
+    border-color: #18c7e7;
+}
+
+.layanan-grid {
+    width: calc(100% - 120px);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 55px;
+    row-gap: 55px;
+    align-items: start;
+}
+
+.layanan-card {
+    width: 100%;
+    max-width: 230px;
+    justify-self: center;
+    overflow: hidden;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.layanan-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 7px 16px rgba(0, 0, 0, 0.12);
+}
+
+.layanan-image {
+    width: 100%;
+    height: 95px;
+    overflow: hidden;
+}
+
+.layanan-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.layanan-info {
+    position: relative;
+    min-height: 70px;
+    padding: 13px 14px 12px;
+    background: #12b9d7;
+}
+
+.layanan-info h3 {
+    margin: 0;
+    padding-right: 25px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+.layanan-link {
+    position: absolute;
+    right: 13px;
+    bottom: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 11px;
+    transition: transform 0.2s ease;
+}
+
+.layanan-link:hover {
+    transform: scale(1.15);
+}
+
+@media (max-width: 768px) {
+
+    .layanan-heading {
+        padding-top: 15px;
+    }
+
+    .layanan-heading h1 {
+        font-size: 25px;
+    }
+
+    .layanan-heading h2 {
+        font-size: 11px;
+        padding: 0 20px;
+    }
+
+    .layanan-search {
+        width: 205px;
+        margin: 25px auto 30px;
+    }
+
+    .layanan-grid {
+        width: calc(100% - 30px);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        column-gap: 18px;
+        row-gap: 30px;
+    }
+
+    .layanan-card {
+        max-width: 190px;
+    }
+
+    .layanan-image {
+        height: 90px;
+    }
+
+    .layanan-info {
+        min-height: 65px;
+    }
+}
